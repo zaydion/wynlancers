@@ -7,8 +7,12 @@
 
 <p>
   <strong>Product:</strong>
-  <%= @review.product :name %>
+  <%= @review.product.name %>
 </p>
 
-<%= link_to 'Edit', edit_review_path(@review) %> |
-<%= link_to 'Back', reviews_path %>
+<%= link_to 'Edit', edit_review_path(@review)%> |
+<% if @review.product.nil? %>
+	<%= link_to 'Back', reviews_path %>
+<% else %>
+	<%= link_to 'Back', @review.product %>
+<%end%>

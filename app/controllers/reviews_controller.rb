@@ -13,9 +13,9 @@ class ReviewsController < ApplicationController
   end
 
   # GET /reviews/new
-  def new
-    @review = Review.new
-  end
+  # def new
+  #   @review = Review.new
+  # end
 
   # GET /reviews/1/edit
   def edit
