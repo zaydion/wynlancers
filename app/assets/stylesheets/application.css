@@ -29,7 +29,12 @@
  	margin: 0 75px 0 75px;
  	border-radius: 1em;
  	text-align: center;
+ 	/*background-color: white;*/
 
+ }
+
+ h1 {
+ 	text-align: center;
  }
 
 table {
