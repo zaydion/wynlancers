@@ -2,3 +2,54 @@
   Place all the styles related to the matching controller here.
   They will automatically be included in application.css.
 */
+.productback{
+	background-image: url("http://www.trigger-proof.com/wp-content/uploads/2013/03/Empowered-Supervisor.jpg");
+	height: 500px;
+	background-repeat: no-repeat;
+	background-size: cover;
+
+}
+.productback .col-sm-8{
+	margin-top: 18%;
+	border-radius: 1em;
+	background-color: rgba(0, 0, 0, 0.60);
+	padding: 2em;
+
+}
+
+.productback p{
+	font-family: "Roboto condensed";
+	color:white;
+	text-align: center;
+	font-size: 1.6em;
+}
+
+.productback form{
+	text-align: center;
+}
+
+.productback input{
+	padding-right: 5em;
+	padding-left: 5em;
+	border: 0;
+	border-radius: 1em;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+}
+
+.productback h1{
+	color:white	;
+	font-family:"Noto sans"; 
+	font-weight: bold;
+	font-size: 4em;
+}
+.jumbotron h1{
+	background: black;
+}
+
+.productback i{
+	background: green;
+	color:white;
+	border-radius: 0.5em;
+	padding:0.2em;
+}
