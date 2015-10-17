@@ -1,9 +1,14 @@
 <p id="notice"><%= notice %></p>
 
 <div class="container-fluid">
- <span class="new_product">
-    <button type="button" class="btn btn-success"><%= link_to 'Apply', new_product_path %></button>
- </span>
+
+ <div class ="col-sm-6 col-sm-offset-3">
+ 	<h1> Wynlancers </h1>
+ 	<p>The most elite level talent in the world.</p>
+    <button type="button" class="btn btn-default"><%= link_to 'Apply', new_product_path %></button>
+
+     <button type="button" class="btn btn-success"><%= link_to 'Hire', products_path %></button>
+ </div>
 </div>
 
 <div class="container">
@@ -25,4 +30,3 @@
 </div> <!-- ends container div -->
 
 
-<%= link_to 'Products', products_path %>

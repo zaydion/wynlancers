@@ -1,4 +1,52 @@
-// Place all the styles related to the Homes controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+ .container-fluid {
+ 	background-size: cover;
+ 	padding: 0px;
+ 	margin: 0px;
+ 	width: 100%;
+ 	height: 500px;
+ 	background-image: url(http://i.imgur.com/F9YjTD7.jpg);
+ }
+
+ .container-fluid h1 {
+ 	font-family: "Noto Sans";
+ 	font-weight: 900;
+ 	color: white;
+ }
+
+
+ .jumbotron {
+ 	border-radius: 1em;
+ 	text-align: center;
+ 	/*background-color: white;*/
+
+ }
+
+.container-fluid .col-sm-6 {
+	  margin-top: 10%;
+		border-radius: 1em;
+ 		background-color: rgba(0, 0, 0, 0.60);
+ 		padding: 5em;
+ 		text-align: center;
+ }
+
+
+  .container-fluid .col-sm-6 p {
+  	font-family: "Roboto Condensed";
+  }
+
+
+ h1 {
+ 	text-align: center;
+ }
+
+
+p {
+	color: white;
+}
+
+.row .col-sm-4 {
+	text-align: center;
+
+}
+
 
