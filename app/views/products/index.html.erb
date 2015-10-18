@@ -1,44 +1,52 @@
 <p id="notice"><%= notice %></p>
+    
+    <div class="navbar">
+     <div class="topnavbar">
+       <a id="title" href="" class="navbar-brand"> 
+          Wynlancers
+       </a>
+  
+       <ul class="nav navbar-nav navbar-right">
+         <li><a href="">Home</a></li>
+        <li><a href="">Popular</a></li>
+         <li><a href="">Reviews</a></li>
+       </ul>
+  
+      </div> <!-- ends topnavbar div --> 
+    </div> <!-- ends navbar div --> 
+
 
     <div class="productback">
         <div class="col-sm-8 col-sm-offset-2">
           <h1>Best Talent in the World!</h1>
           <p>What can we do for you?</p>
           <form>
-             <input type="text" resutls="searchresults"/>
-             <i class="fa fa-search fa-2x"></i> 
+             <input type="text" results="searchresults" placeholder="Enter keywords"/>
+             <button type="button" class="btn btn-md btn-success">Search</button>
+             <!-- <i class="fa fa-search fa-2x"></i> -->
           </form>
           </form>
         </div>
-    </div>
-
-    <div class="jumbotron">
+    </div>  <!-- ends productback div --> 
 
 
-      <table>
-        <thead>
-          <tr>
-            <th>Name</th>
-            <th>Description</th>
-            <th>Price</th>
-            <th colspan="3"></th>
-          </tr>
-        </thead>
-
-        <tbody>
-          <% @products.each do |product| %>
-          <tr>
-            <td><%= product.name %></td>
-            <td><%= product.description %></td>
-            <td><%= product.formatted_price %></td>
-            <td><%= link_to 'Show', product %></td>
-            <td><%= link_to 'Edit', edit_product_path(product) %></td>
-            <td><%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-          </tr>
-          <% end %>
-        </tbody>
-      </table>
-
-    </div>  <!-- ends jumbotron div -->
+    <div class="container">
+      <h1 id="variety">Choose from a variety of skills</h1>
+      <h3>Most popular wynlancers</h3>
+      <div class="profilesback">      
+        <div class="jumbotron">
+            <% @products.each do |product| %>
+            <div class="col-sm-4">
+              <ul>
+                <li><%= product.name %></li>
+                <li><img src="http://www.teryrobertson.com/Graphics/images/1.jpg"/></li>   
+                <li><%= product.description %></li>
+                <li><%= product.formatted_price %></li>
+              </ul>   
+            </div> <!-- ends col-sm-4 div --> 
+            <% end %>    
+        </div>  <!-- ends jumbotron div -->
+      </div><!-- ends profilesback div -->
+    </div> <!-- ends container div -->
     <br>
    

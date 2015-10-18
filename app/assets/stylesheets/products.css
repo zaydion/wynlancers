@@ -53,3 +53,51 @@
 	border-radius: 0.5em;
 	padding:0.2em;
 }
+
+.col-sm-4 li{
+	list-style-type: none;
+}
+
+.jumbotron{
+	background: transparent;
+}
+
+.listbackground .col-sm-4{
+	background: ;
+}
+
+.profilesback{
+	background-image: url("https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS2H3q3e-sa3sJbDXFFhHLFLrSn9bFeAfdeQUlEjz5SpdDawjLKTA");
+	height: 70em;
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+.profilesback{
+	margin-top: 5em;
+}
+
+#variety{
+	margin-top: 10%;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.navbar{
+	background:black;
+	margin-top: -15px;
+	margin-bottom: 100px;
+}
+
+#title{
+	margin-left: 5%;
+	font-size: 2.5em;
+	padding: 0.5em;
+	font-family: 'Sansita One', cursive;
+}
+
+.topnavbar ul{
+	margin-right: 5%;
+	padding:0.5em;
+}
+
+
