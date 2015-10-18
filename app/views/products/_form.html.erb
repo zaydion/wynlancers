@@ -1,70 +1,32 @@
-<!-- <%= form_for(@product) do |f| %>
-  <% if @product.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@product.errors.count, "error") %> prohibited this product from being saved:</h2>
+<form accept-charset="UTF-8" action="/products" class="new_product" id="new_product" method="post" style="text-align: center; background-color: rgba(112,112,112,.5); padding: 3em; margin-top: 5em;">
+  <h3 style="text-align: center; letter-spacing: .25em; font-size: 2.5em; font-family: sans-serif; text-transform: uppercase; color: #30BF30">Apply below:</h3><br><br>
+  <%= form_for(@product) do |f| %>
+    <% if @product.errors.any? %>
+      <div id="error_explanation" style="color: white; font-family: sans-serif">
+        <h2><%= pluralize(@product.errors.count, "error") %> prohibited this product from being saved:</h2>
 
-      <ul>
-      <% @product.errors.full_messages.each do |message| %>
-        <li><%= message %></li>
-      <% end %>
-      </ul>
-    </div>
+        <ul style="margin-left: -3.5em; color: red; font-size: 1em; font-family: sans-serif">
+        <% @product.errors.full_messages.each do |message| %>
+          <li><%= message %></li><br>
+        <% end %>
+        </ul>
+      </div><br>
+    <% end %>
+
+      <label="product_name" style="color: #C2D6D6; letter-spacing: .1em; font-size: 1.5em; font-family: sans-serif">Name</label><br>
+      <div style="color: #30BF30; font-size: 1em" >
+        <%= f.text_field :name %>
+      </div>
+      <br>
+      <label="product_description" style="color: #C2D6D6; letter-spacing: .1em; font-size: 1em; font-family: sans-serif">Area(s) of Expertise</label><br>
+        <div style="color: #30BF30; font-size: 1em">
+          <%= f.text_area :description %>
+        </div><br>
+      <label="price_in_cents" style="color: #C2D6D6; padding-top: 1em; letter-spacing: .1em; font-size: 1em; font-family: sans-serif">Expected $ / Project</label><br>
+        <div style="color: #30BF30; font-size: 1em">
+          <%= f.number_field :price_in_cents %>
+        </div><br>
+        <div class="actions">
+          <input class="btn btn-success" name="commit" type="submit" value="Submit" style="margin-top: 1.5em; font-family: sans-serif; margin-bottom: 1.5em; letter-spacing: .2em;"/><br>
+        </div>
   <% end %>
-
-  <div class="field">
-    <%= f.label :name %><br>
-    <%= f.text_field :name %>
-  </div>
-  <div class="field">
-    <%= f.label :description %><br>
-    <%= f.text_area :description %>
-  </div>
-  <div class="field">
-    <%= f.label :price_in_cents %><br>
-    <%= f.number_field :price_in_cents %>
-  </div>
-  <div class="actions">
-    <%= f.submit %>
-  </div>
-<% end %> -->
-
-<div class="body" style="padding-top: 6em; font-family: Roboto Condensed; padding-bottom: 15em; background-image: url('https://images.unsplash.com/photo-1442406964439-e46ab8eff7c4?fit=crop&fm=jpg&h=575&q=80&w=1450'); background-size: cover">
-  <br>
-
-  <h1 style="text-align: center; letter-spacing: .05em; padding: 0 5em 0 5em; color: white;">Think you have what it takes to join the Wynlancer team?</h1><br>
-
-<br>
-  <form accept-charset="UTF-8" action="/products" class="new_product"
-      id="new_product" method="post" style="text-align: center; background-color: rgba(112,112,112,.5); padding: 3em; margin-top: 5em;">
-  <h3 style="text-align: center; letter-spacing: .25em; text-transform: uppercase; color: #00CCFF">Apply below:</h3>
-  <input name="utf8" type="hidden" value="&#x2713;" style="padding: 1.5em"/>
-  <input name="authenticity_token" type="hidden"
-         value="NNb6+J/j46LcrgYUC60wQ2titMuJQ5lLqyAbnbAUkdo=" /><br>
-  <label for="product_name" style="margin-bottom: 1em; color: #C2D6D6; letter-spacing: .1em; font-family: sans-serif">Name</label><br>
-  <input id="product_name" name="product[name]" type="string" placeholder="Name"/>
-
-  <br>
-  <br>
-
-  <label for="product_description" style="margin-bottom: 1em; margin-top: 1em; color: #C2D6D6; font-family: sans-serif">Area(s) of Expertise</label><br>
-  <input id="product_description" name="product[description]" type="text" placeholder="E.g. Web Design" style="color: #00CCFF"/>
-
-  <br>
-  <br>
-
-  <label for="product_picture" style="margin-bottom: 1em; margin-top: 1em; color: #C2D6D6; font-family: sans-serif">Profile Picture</label><br>
-  <input id="product_picture" name="product[picture]" placeholder="Copy + paste img URL"
-         type="text" />
-  <br>
-  <br>
-
-  <label for="price_in_cents" style="margin-bottom: 1em; margin-top: 1em; color: #C2D6D6; font-family: sans-serif">Expected $/Project</label><br>
-  <input id="price_in_cents"
-         name="product[price_in_cents]" type="price_in_cents" placeholder="$0.00"/>
-
-  <br>
-  <br>
-
-  <input class="btn btn-info" name="commit" type="submit"
-         value="SUBMIT" style="margin-top: 1.5em; margin-bottom: 1em; background-color: grey"/><br>
-  </form>
