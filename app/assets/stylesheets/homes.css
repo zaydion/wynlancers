@@ -1,3 +1,13 @@
+ h1 {
+ 	font-family: "Noto Sans";
+
+ }
+
+ p {
+ 	font-family: "Roboto Condensed"
+ }
+
+
  .container-fluid {
  	background-size: cover;
  	padding: 0px;
@@ -5,19 +15,22 @@
  	width: 100%;
  	height: 500px;
  	background-image: url(http://i.imgur.com/F9YjTD7.jpg);
+ 	color: white;
  }
 
  .container-fluid h1 {
  	font-family: "Noto Sans";
  	font-weight: 900;
+ 	font-size: 4em;
  	color: white;
  }
 
 
- .jumbotron {
- 	border-radius: 1em;
+ .container {
  	text-align: center;
- 	/*background-color: white;*/
+ 	background-color: #f1f1f1;
+ 	width: 100%;
+ 	height: 280px;
 
  }
 
@@ -25,28 +38,83 @@
 	  margin-top: 10%;
 		border-radius: 1em;
  		background-color: rgba(0, 0, 0, 0.60);
- 		padding: 5em;
+ 		padding: 2.5em;
  		text-align: center;
  }
 
 
   .container-fluid .col-sm-6 p {
   	font-family: "Roboto Condensed";
+  	font-size: 1.6em;
   }
+
+  .container-fluid .col-sm-6 .btn {
+  	border: 0;
+	  font-family: "Roboto Condensed";
+	  margin-left: 1em;
+	  font-size: 1em;
+	  font-weight: 400;
+	  color: white;
+ }
+
 
 
  h1 {
  	text-align: center;
  }
 
+ h6 {
+ 	font-style: italic;
+ }
 
-p {
-	color: white;
-}
 
 .row .col-sm-4 {
 	text-align: center;
 
+}
+
+a {
+	color: white;
+	text-decoration: none;
+}
+
+.btn-default a {
+	color: green;
+}
+
+a:hover {
+	color: black;
+	text-decoration: none;
+
+}
+
+.team {
+	height: 350px;
+	width: 100%;
+	background-color: black;
+	color: white;
+}
+
+.container .team h1 {
+	color: white;
+}
+
+img {
+	margin: 0 auto;
+	height: 40%;
+	width: 40%;
+}
+
+.fa-desktop {
+	color: green;
+}
+
+.fa-check-circle {
+	color: green;
+}
+
+.fa-users {
+	color: green;
 }
 
 
