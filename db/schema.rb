@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151017161341) do
+ActiveRecord::Schema.define(version: 20151018200352) do
 
   create_table "homes", force: :cascade do |t|
     t.string   "index"
@@ -35,5 +35,13 @@ ActiveRecord::Schema.define(version: 20151017161341) do
   end
 
   add_index "reviews", ["product_id"], name: "index_reviews_on_product_id"
+
+  create_table "users", force: :cascade do |t|
+    t.string   "email"
+    t.string   "password_hash"
+    t.string   "password_salt"
+    t.datetime "created_at",    null: false
+    t.datetime "updated_at",    null: false
+  end
 
 end
