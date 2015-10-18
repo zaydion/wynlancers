@@ -27,13 +27,12 @@
     <%= f.submit %>
   </div>
 <% end %> -->
-<br><br>
-<div class="formcontainer" style="position: center">
+<br>
   <form accept-charset="UTF-8" action="/products" class="new_product"
-      id="new_product" method="post" style="text-align: center">
+      id="new_product" method="post" style="text-align: center; background-color: lightgrey">
   <input name="utf8" type="hidden" value="&#x2713;" />
   <input name="authenticity_token" type="hidden"
-         value="NNb6+J/j46LcrgYUC60wQ2titMuJQ5lLqyAbnbAUkdo=" />
+         value="NNb6+J/j46LcrgYUC60wQ2titMuJQ5lLqyAbnbAUkdo=" /><br>
   <label for="product_name">Name</label><br>
   <input id="product_name" name="product[name]" type="string" />
 
@@ -60,6 +59,5 @@
   <br>
 
   <input class="btn btn-primary" name="commit" type="submit"
-         value="Submit" />
+         value="Submit" style="margin-bottom: 1.5em"/><br>
   </form>
-</div>
