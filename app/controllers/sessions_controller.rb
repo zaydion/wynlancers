@@ -3,9 +3,9 @@ class SessionsController < ApplicationController
 	end
 
 	def create
-  	## the code below will try to authenticate the user, if successful as instance of the User model if returned
+  	## the code below will try to authenticate the user, if successful an instance of the User model is returned
   	@user.User.authenticate(params[:email], params[:password])
-  	## so if successful and @user exist(not nil)
+  	## so if successful and @user exist(not nil) flash success
   	if @user
   		flash[:notice] = "You are now logged in."
   	## log the user in by storing their ID in the session hash with the [:user_id] key
