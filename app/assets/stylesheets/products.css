@@ -101,7 +101,7 @@
 }
 
 .reviews table{
-	margin-top: 80em;
+	margin-top: 20em;
 }
 
 .reviews img{
@@ -185,7 +185,6 @@ text-decoration:none;
 display:inline-block;
 text-transform:uppercase;
 color:#fff;
-border:1px solid #fff;
 background-color:transparent;
 opacity:0;
 filter:alpha(opacity=0);
