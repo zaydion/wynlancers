@@ -35,18 +35,51 @@
       <h3>Most popular wynlancers</h3>
       <div class="profilesback">      
         <div class="jumbotron">
-            <% @products.each do |product| %>
-            <div class="col-sm-4">
-              <ul>
-                <li><%= product.name %></li>
-                <li><img src="http://www.teryrobertson.com/Graphics/images/1.jpg"/></li>   
-                <li><%= product.description %></li>
-                <li><%= product.formatted_price %></li>
-              </ul>   
-            </div> <!-- ends col-sm-4 div --> 
-            <% end %>    
-        </div>  <!-- ends jumbotron div -->
-      </div><!-- ends profilesback div -->
-    </div> <!-- ends container div -->
+          <% @products.each do |product| %>  
+          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+            <div class="hovereffect">
+              <ul>  
+                <li><img class="img-responsive" src="http://www.teryrobertson.com/Graphics/images/1.jpg" alt="Profile Picture"></li> 
+              <div class="overlay">
+               <li><%= product.name %></li>
+               <li><%= product.description %></li>
+               <li><%= product.formatted_price %></li>
+               <a class="info" href="#">Check out my profile</a>
+             </div> <!-- ends overlay div -->
+             </ul> 
+           </div> <!-- ends hovereffect div -->
+         </div> <!-- ends col-lg-3 col-md-4 col-sm-6 col-xs-12 div -->
+         <% end %> 
+       </div> <!-- ends jumbotron div -->
+     </div> <!-- ends profilesback div -->
+   </div> <!-- ends container div -->
+   
+   <div class="reviews">
+     <table>
+        <tr>
+          <th colspan="2" class="text-center">Reviews</th>
+        </tr>
+        <tr>
+         <td>
+           <img src="http://www.wilkinsonsword.co.uk/images/slider/slide3_woman.png">
+           <div>
+           <p class="lead">Excellent job on this project. Really surprised on how well it turned out. Highly recommend. I will definitely come 
+               back next time I need something done. I never thought it was possible to get what I needed done in so little time and
+               with so much proficiency.</p>
+             </div>
+           </td>
+           <td>
+             <img src="http://www.lifetimehealth.co.za/wp-content/uploads/2014/10/Black-Man-smiling.jpg">
+             <div>
+               <p class="lead">This is an amazing, outstanding site! These boys and girls are real professionals, they listened well, and were eager and able to make the required changes. Their work was beautiful and professional, they're well worth the money. You, or your brand, will be please and amazed if you hire them.</p>
+             </div>
+           </td>
+         </tr>
+       </table>
+     </div> <!-- ends reviews div -->
+
+     <div class="footer">
+        <h4>Contact Info</h4>
+     </div>
     <br>
    
