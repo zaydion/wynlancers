@@ -87,6 +87,10 @@
 	font-family: 'Sansita One', cursive;
 }
 
+#title:hover{
+	background: white;
+}
+
 .topnavbar ul{
 	margin-right: 5%;
 	padding:0.5em;
