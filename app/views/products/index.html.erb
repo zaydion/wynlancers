@@ -7,7 +7,7 @@
        </a>
   
        <ul class="nav navbar-nav navbar-right">
-         <li><a href="">Home</a></li>
+         <li><a href="/">Home</a></li>
         <li><a href="">Popular</a></li>
          <li><a href="">Reviews</a></li>
        </ul>
@@ -20,12 +20,16 @@
         <div class="col-sm-8 col-sm-offset-2">
           <h1>Best Talent in the World!</h1>
           <p>What can we do for you?</p>
-          <form>
+          <%= form_tag search_path do %>
+            <p id="searchbar">
+              <%= text_field_tag :search, params[:search] %>
+              <%= submit_tag "Search", :name => nil %>
+            </p>
+          <% end %>
+<!--           <form>
              <input type="text" results="searchresults" placeholder="Enter keywords"/>
              <button type="button" class="btn btn-md btn-success">Search</button>
-             <!-- <i class="fa fa-search fa-2x"></i> -->
-          </form>
-          </form>
+          </form> -->
         </div>
     </div>  <!-- ends productback div --> 
 
@@ -44,7 +48,8 @@
                <li><%= product.name %></li>
                <li><%= product.description %></li>
                <li><%= product.formatted_price %></li>
-               <a class="info" href="#">Check out my profile</a>
+               <li><%= link_to 'Check out my profile', product, class: 'info' %></li>
+              <!--  <a class="info" href="#">Check out my profile</a> -->
              </div> <!-- ends overlay div -->
              </ul> 
            </div> <!-- ends hovereffect div -->

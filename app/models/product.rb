@@ -8,4 +8,12 @@ class Product < ActiveRecord::Base
 		price_in_dollars = price_in_cents.to_f / 100
 		format("$%.2f", price_in_dollars)
 	end
+
+	def self.search(search)
+  		if search
+    		self.where('name LIKE ?', "%#{search}%")
+  		else
+    		all
+  		end
+	end
 end

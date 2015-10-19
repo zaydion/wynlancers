@@ -135,6 +135,10 @@
 
 }
 
+#searchbar{
+	color: black;
+}
+
 .hovereffect {
 width:100%;
 height:100%;
@@ -184,22 +188,24 @@ transition:all .2s ease-in-out;
 padding:10px;
 }
 
-.hovereffect a.info {
+.info{
+background: transparent;
 text-decoration:none;
 display:inline-block;
 text-transform:uppercase;
-color:#fff;
 background-color:transparent;
 opacity:0;
 filter:alpha(opacity=0);
 -webkit-transition:all .2s ease-in-out;
 transition:all .2s ease-in-out;
-margin:50px 0 0;
-padding:7px 14px;
+font-size: 0.9em;
+margin-top: 35px;
 }
 
-.hovereffect a.info:hover {
+.info:hover {
 box-shadow:0 0 5px #fff;
+color:white;
+
 }
 
 .hovereffect:hover img {
