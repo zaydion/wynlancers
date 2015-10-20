@@ -1,12 +1,18 @@
-<p id="notice"><%= notice %></p>
+<div class="container-fluid">
+<div class="product_profile">
+<!-- <p id="notice"><%= notice %></p> -->
 
+
+<div class="container">
+<div class="product_head">
 <%= image_tag @product.photo%>
-
 <p>
-  <strong>Name:</strong>
     <%= @product.name %>
 </p>
-
+</div>
+</div>
+<div class="container">
+  <div class="description">
 <p>
   <strong>Description:</strong>
   <%= @product.description %>
@@ -14,21 +20,29 @@
 
 <p>
   <strong>Price:</strong>
-  <%= @product.formatted_price %>
+  <%= number_to_currency @product.price_in_cents %>
 </p>
+  </div>
+</div>
 
+<div class="container">
+<div class="profile_feet">
 <h3>Reviews</h3>
 
 <% @product.reviews.each do | review | %>
   <p>
   	<%= review.comment %>
   	<br>
-  	Added on: <%= time_ago_in_words review.created_at %>
+  	<%= time_ago_in_words review.created_at %> ago
   </p>
   <% end %>
 
   <h3>New Review</h3>
   <%= render 'reviews/form' %>
+</div>
+</div>
 
 <%= link_to 'Edit', edit_product_path(@product) %> |
 <%= link_to 'Back', products_path %>
+</div>
+</div>

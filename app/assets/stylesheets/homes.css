@@ -158,6 +158,7 @@ header #input {
  	padding-top: 4em;
  	height: 600px;
  	width: 100%;
+ 	overflow-y: auto;
  	background-color: black;
  	color: white;
  }

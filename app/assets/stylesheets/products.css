@@ -44,8 +44,13 @@
 	border-radius: 1em;
 	background-color: rgba(0, 0, 0, 0.60);
 	padding: 2em;
+<<<<<<< HEAD
 
 	}
+=======
+	
+}
+>>>>>>> 292affaa12226a6248f4eb8ba0e0bd61f11a1c17
 
 	.productback p{
 	font-family: "Roboto condensed";
@@ -89,7 +94,13 @@
 	background-size: cover;
 	height: 70em;
 	margin-top: 5em;
+<<<<<<< HEAD
 	}
+=======
+	
+ 	overflow-y: auto;
+}
+>>>>>>> 292affaa12226a6248f4eb8ba0e0bd61f11a1c17
 
 
 

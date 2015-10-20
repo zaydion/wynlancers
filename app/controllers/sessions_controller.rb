@@ -24,4 +24,8 @@ class SessionsController < ApplicationController
   	flash[:notice] = "You've been logged out successfully"
   	redirect_to "/"
   end
+
+  def current_user
+    current_user ||= User.find(session[:user_id]) if session[:user_id]
+  end
 end
