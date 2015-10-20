@@ -1,5 +1,5 @@
 <form accept-charset="UTF-8" action="/products" class="new_product" id="new_product" method="post" style="text-align: center; background-color: rgba(112,112,112,.5); padding: 3em; margin-top: 5em;">
-  <h3 style="text-align: center; letter-spacing: .25em; font-size: 2.5em; font-family: sans-serif; text-transform: uppercase; color: #30BF30">Apply below:</h3><br><br>
+  <h3 style="text-align: center; letter-spacing: .25em; font-size: 2.5em; font-family: sans-serif; text-transform: uppercase; color: #30BF30">Apply:</h3><br><br>
   <%= form_for(@product) do |f| %>
     <% if @product.errors.any? %>
       <div id="error_explanation" style="color: white; font-family: sans-serif">
@@ -13,24 +13,31 @@
       </div><br>
     <% end %>
 
-      <label="product_name" style="color: #C2D6D6; letter-spacing: .1em; font-size: 1.5em; font-family: sans-serif">Name</label><br>
+      <label="product_name" style="color: #C2D6D6; letter-spacing: .1em; font-size: 1em; font-family: sans-serif">Name</label><br>
       <div style="color: #30BF30; font-size: 1em" >
         <%= f.text_field :name %>
-      </div>
+      </div><br>
+      <label="product_description" style="color: #C2D6D6; letter-spacing: .1em; font-size: 1em; font-family: sans-serif">Area(s) of Expertise</label><br>
+        <div style="color: #30BF30; font-size: 1em">
+          <%= f.text_field :description %>
+        </div>
       <br>
-      <label="product_photo" style="color: #C2D6D6; letter-spacing: .1em; font-size: 1.5em; font-family: sans-serif">Upload Photo URL</label><br>
+      <label="product_photo" style="color: #C2D6D6; letter-spacing: .1em; font-size: 1em; font-family: sans-serif">Profile Picture</label><br>
+      <p style="font-size: .7em;">(Copy + paste picture URL below)</p>
       <div style="color: #30BF30; font-size: 1em" >
         <%= f.text_field :photo %>
       </div>
       <br>
-      <label="product_description" style="color: #C2D6D6; letter-spacing: .1em; font-size: 1em; font-family: sans-serif">Area(s) of Expertise</label><br>
-        <div style="color: #30BF30; font-size: 1em">
-          <%= f.text_area :description %>
-        </div><br>
-      <label="price_in_cents" style="color: #C2D6D6; padding-top: 1em; letter-spacing: .1em; font-size: 1em; font-family: sans-serif">Expected $ / Project</label><br>
+      <label="price_in_cents" style="color: #C2D6D6; padding-top: 1em; letter-spacing: .1em; font-size: 1em; font-family: sans-serif">Expected $ / Hour</label><br>
         <div style="color: #30BF30; font-size: 1em">
           <%= f.number_field :price_in_cents %>
         </div><br>
+        <label="product_project" style="color: #C2D6D6; letter-spacing: .1em; font-size: 1em; font-family: sans-serif">Past Projects</label><br>
+          <p style="font-size: .7em;">(Copy + paste project URLs below)</p>
+          <div style="color: #30BF30; font-size: 1em">
+            <%= f.text_field :project %><br><br>
+            <%= f.text_field :project %>
+          </div><br>
         <div class="actions">
           <input class="btn btn-success" name="commit" type="submit" value="Submit" style="margin-top: 1.5em; font-family: sans-serif; margin-bottom: 1.5em; letter-spacing: .2em;"/><br>
         </div>
