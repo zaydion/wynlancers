@@ -11,9 +11,14 @@ class Product < ActiveRecord::Base
 
 	def self.search(search)
   		if search
-    		self.where('name LIKE ?', "%#{search}%")
+    	 resultsA = self.where('name LIKE ?', "%#{search}%")
+    	 resultsB = self.where('description LIKE ?', "%#{search}%")
   		else
     		all
   		end
+  		resultsB.length == 0 ? resultsA : resultsB 
 	end
+
+
+
 end

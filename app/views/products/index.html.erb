@@ -20,10 +20,10 @@
         <div class="col-sm-8 col-sm-offset-2">
           <h1>Best Talent in the World!</h1>
           <p>What can we do for you?</p>
-          <%= form_tag search_path do %>
+          <%= form_tag search_path(anchor: 'popular') do %>
             <p id="searchbar">
               <%= text_field_tag :search, params[:search] %>  
-              <%= submit_tag "Search", :name => nil %> 
+              <%= submit_tag "Search", :name => nil, class: "searchbutton" %> 
             </p>
           <% end %>
 <!--           <form>
@@ -41,7 +41,7 @@
       <div class="profilesback">      
         <div class="jumbotron">
           <% @products.each do |product| %>  
-          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+          <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
             <div class="hovereffect">
               <ul>  
                 <li><%= image_tag product.photo, class: "img-responsive" %></li>

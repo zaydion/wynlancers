@@ -1,9 +1,5 @@
  /*nice green? #2afd9c*/
 
- h1 {
- 	font-family: "Noto Sans";
-
- }
 
  p {
  	font-family: "Roboto Condensed"
@@ -65,7 +61,7 @@ header #input {
  	padding: 0px;
  	margin: 0px;
  	width: 100%;
- 	height: 500px;
+ 	height: 800px;
  	background-image: url(http://i.imgur.com/F9YjTD7.jpg);
  	color: white;
  }
@@ -87,16 +83,22 @@ header #input {
  	text-align: center;
  	background-color: #f1f1f1;
  	width: 100%;
- 	height: 280px;
+ 	height: 500px;
  	padding-top: 10px;
 
  }
+
+ .information h1{
+ 	padding-top: 2em;
+
+ }
+
 
  .container-fluid .col-sm-6 {
  	margin-top: 10%;
  	border-radius: 1em;
  	background-color: rgba(0, 0, 0, 0.60);
- 	padding: 2.5em;
+ 	padding: 5em;
  	text-align: center;
  }
 
@@ -117,27 +119,33 @@ header #input {
 
 
 
- h1 {
+ .col-sm-6 h1{
+ 	font-family: "Noto Sans";
  	text-align: center;
+ 	font-size: 6em;
  }
 
- h6 {
+ h4 {
  	font-style: italic;
  }
 
 
  .row .col-sm-4 {
  	text-align: center;
-
+ 	padding: 2em;
  }
 
- a {
+
+ .btn-success a {
  	color: white;
  	text-decoration: none;
+ 	font-size: 2em;
+
  }
 
  .btn-default a {
  	color: green;
+ 	font-size: 2em;
  }
 
  a:hover {
@@ -147,8 +155,8 @@ header #input {
  }
 
  .team {
- 	padding-top: 10px;
- 	height: 380px;
+ 	padding-top: 4em;
+ 	height: 600px;
  	width: 100%;
  	background-color: black;
  	color: white;
@@ -156,6 +164,8 @@ header #input {
 
  .container .team h1 {
  	color: white;
+ 	font-family: "Noto Sans";
+ 	text-align: center;
  }
 
  img {

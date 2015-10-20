@@ -2,147 +2,182 @@
   Place all the styles related to the matching controller here.
   They will automatically be included in application.css.
 */
-.productback{
+
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .reviews p{
+    font-size: 1.4em;
+    text-align: center;
+   }
+
+   .productback h1{
+	color:white	;
+	font-family:"Noto sans"; 
+	font-weight: bold;
+	font-size: 3em;
+	}
+}
+
+@media (min-width: 1024px) {
+  .reviews p{
+    font-size: 1.6em;
+    text-align: center;
+   }
+
+   .productback h1{
+	color:white	;
+	font-family:"Noto sans"; 
+	font-weight: bold;
+	font-size: 4em;
+	}
+}
+
+ .productback{
 	background-image: url("http://www.trigger-proof.com/wp-content/uploads/2013/03/Empowered-Supervisor.jpg");
 	height: 500px;
 	background-repeat: no-repeat;
 	background-size: cover;
+	}
 
-}
-.productback .col-sm-8{
+	.productback .col-sm-8{
 	margin-top: 18%;
 	border-radius: 1em;
 	background-color: rgba(0, 0, 0, 0.60);
 	padding: 2em;
 
-}
+	}
 
-.productback p{
+	.productback p{
 	font-family: "Roboto condensed";
 	color:white;
 	text-align: center;
 	font-size: 1.6em;
-}
+	}
 
-.productback form{
+	.productback form{
 	text-align: center;
-}
+	}
 
-.productback input{
+	.productback input{
 	padding-right: 5em;
 	padding-left: 5em;
 	border: 0;
 	border-radius: 1em;
 	padding-top: 0.5em;
 	padding-bottom: 0.5em;
-}
+	}
 
-.productback h1{
-	color:white	;
-	font-family:"Noto sans"; 
-	font-weight: bold;
-	font-size: 4em;
-}
-.jumbotron h1{
+	.jumbotron h1{
 	background: black;
-}
+	}
 
-.productback i{
+	.productback i{
 	background: green;
 	color:white;
 	border-radius: 0.5em;
 	padding:0.2em;
-}
+	}
 
 
-.jumbotron{
+	.jumbotron{
 	background: transparent;
-}
+	}
 
-.profilesback{
+	.profilesback{
 	background-image: url("http://7-themes.com/data_images/out/4/6781880-cool-high-tech-wallpaper.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	height: 70em;
 	margin-top: 5em;
-}
+	}
 
 
 
-#variety{
+	#variety{
 	margin-top: 10%;
 	font-family: 'Montserrat', sans-serif;
-}
+	}
 
-.navbar{
+	.navbar{
 	background:black;
 	margin-top: -15px;
 	margin-bottom: 100px;
-}
+	}
 
-#title{
+	#title{
 	margin-left: 5%;
 	font-size: 2.5em;
 	padding: 0.5em;
 	font-family: 'Sansita One', cursive;
-}
+	}
 
-#title:hover{
+	#title:hover{
 	background: white;
-}
+	}
 
-.topnavbar ul{
+	.topnavbar ul{
 	margin-right: 5%;
 	padding:0.5em;
-}
+	}
 
-.overlay li{
+	.overlay li{
 	padding-top: 5px;
 	font-size: 1.5em;
 	color: white;
 	font-family: "Roboto condensed";
 	background: rgba(0, 0, 0, 0.60);
-}
+	}
 
-.reviews table{
+	.reviews table{
 	margin-top: 5em;
-}
+	}
 
-.reviews img{
+	.reviews td{
+	padding: 5em;
+	}
+
+	.reviews th{
+	font-size: 3em;
+	font-family: 'Montserrat', sans-serif;
+	}
+
+ 
+   .reviews img{
 	border-radius: 20em;
 	margin-left: 30%;
 	width: 150px;
 	height: 150px;
-}
-
-.reviews td{
-	padding: 5em;
-}
-
-.reviews th{
-	font-size: 3em;
-	font-family: 'Montserrat', sans-serif;
-}
-
-.reviews p {
-	text-align: center;
-}
-
-.footer{
+   }
+   .footer{
 	background: #4d4d4d;
 	height:150px;
 	margin-bottom: -50px;
 
 }
 
-#searchbar{
-	color: black;
+#linedivider{
+	margin-top: 10%;
+	height:1px;
+	background:black;
 }
 
-#linedivider{
+input[type="submit"] {
+	color:white;
+	background: green;
+	font-size: 0.8em;
+	border-radius: 5px;
+	padding:6px;
+	padding-left: 9px;
+	padding-right: 9px;
+}
 
-	height:100px;
-	background:black;
+form input[type=text]{
+	padding:6px;
+	padding-left: 30px;
+	padding-right: 30px;
+	color:black;
+	font-size: 0.8em;
+	border-radius: 5px;
 }
 
 .hovereffect {
