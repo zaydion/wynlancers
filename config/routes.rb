@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+
+  post "search", to: 'products#search', as: 'search'
+
   get 'sessions/new'
 
   get 'sessions/create'

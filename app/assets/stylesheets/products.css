@@ -60,10 +60,10 @@
 }
 
 .profilesback{
-	background-image: url("https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS2H3q3e-sa3sJbDXFFhHLFLrSn9bFeAfdeQUlEjz5SpdDawjLKTA");
+	background-image: url("http://7-themes.com/data_images/out/4/6781880-cool-high-tech-wallpaper.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
 	height: 70em;
-	margin-left: 5%;
-	margin-right: 5%;
 	margin-top: 5em;
 }
 
@@ -105,7 +105,7 @@
 }
 
 .reviews table{
-	margin-top: 20em;
+	margin-top: 5em;
 }
 
 .reviews img{
@@ -133,6 +133,16 @@
 	height:150px;
 	margin-bottom: -50px;
 
+}
+
+#searchbar{
+	color: black;
+}
+
+#linedivider{
+
+	height:100px;
+	background:black;
 }
 
 .hovereffect {
@@ -163,7 +173,7 @@ transition:all .4s ease-in-out
 display:block;
 position:relative;
 height: 200px;
-width: 400px;
+width: 190px;
 border-radius: 10px;
 -webkit-transition:all .4s linear;
 transition:all .4s linear;
@@ -184,22 +194,24 @@ transition:all .2s ease-in-out;
 padding:10px;
 }
 
-.hovereffect a.info {
+.info{
+background: transparent;
 text-decoration:none;
 display:inline-block;
 text-transform:uppercase;
-color:#fff;
 background-color:transparent;
 opacity:0;
 filter:alpha(opacity=0);
 -webkit-transition:all .2s ease-in-out;
 transition:all .2s ease-in-out;
-margin:50px 0 0;
-padding:7px 14px;
+font-size: 0.9em;
+margin-top: 35px;
 }
 
-.hovereffect a.info:hover {
+.info:hover {
 box-shadow:0 0 5px #fff;
+color:white;
+
 }
 
 .hovereffect:hover img {

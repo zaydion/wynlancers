@@ -1,3 +1,60 @@
-.product_profile {
-	background: black;
+h3 {
+	font-family: "Noto Sans";
 }
+
+.product_profile {
+	background: rgba(0, 0, 0, 0.60);
+}
+
+.product_head {
+	text-align: center;
+	border-bottom: 2px solid white;
+}
+
+.product_head img {
+	border-radius: 1em;
+	height: 30%;
+	width: 20%;
+	margin-top: 10em;
+}
+
+.container .description {
+	margin: 0;
+	height: 10em;
+	padding: 2em;
+	width: 100%;
+}
+
+.description {
+	text-align: center;
+	border: 2px solid white;
+	background-color: white;
+	color: black;
+	width: 100%;
+}
+
+
+.container .profile_feet {
+	background-color: rgba(0, 0, 0, 0.60);
+	width: 100%;
+	height: 20em;
+	text-align: center;
+}
+
+
+.container .profile_feet textarea {
+	border-radius: 1em;
+	border: 0;
+}
+
+
+.container .profile_feet input {
+	background-color: green;
+	color: white;
+	border: 0;
+	border-radius: 1em;
+	padding: 5px;
+}
+
+
+

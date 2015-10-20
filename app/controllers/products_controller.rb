@@ -3,8 +3,14 @@ class ProductsController < ApplicationController
 
   # GET /products
   # GET /products.json
+
   def index
     @products = Product.all
+  end
+
+  def search
+    @products = Product.search(params[:search])
+    render :index
   end
 
   # GET /products/1
@@ -70,6 +76,6 @@ class ProductsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def product_params
-      params.require(:product).permit(:name, :description, :price_in_cents)
+      params.require(:product).permit( :photo,:name, :description, :price_in_cents)
     end
 end

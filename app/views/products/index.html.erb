@@ -2,14 +2,14 @@
     
     <div class="navbar">
      <div class="topnavbar">
-       <a id="title" href="" class="navbar-brand"> 
+       <a id="title" href="/" class="navbar-brand"> 
           Wynlancers
        </a>
   
        <ul class="nav navbar-nav navbar-right">
          <li><a href="/">Home</a></li>
-        <li><a href="">Popular</a></li>
-         <li><a href="">Reviews</a></li>
+        <li><a href="/products#popular">Popular</a></li>
+         <li><a href="/products#reviews">Reviews</a></li>
        </ul>
   
       </div> <!-- ends topnavbar div --> 
@@ -20,18 +20,23 @@
         <div class="col-sm-8 col-sm-offset-2">
           <h1>Best Talent in the World!</h1>
           <p>What can we do for you?</p>
-          <form>
+          <%= form_tag search_path do %>
+            <p id="searchbar">
+              <%= text_field_tag :search, params[:search] %>  
+              <%= submit_tag "Search", :name => nil %> 
+            </p>
+          <% end %>
+<!--           <form>
              <input type="text" results="searchresults" placeholder="Enter keywords"/>
              <button type="button" class="btn btn-md btn-success">Search</button>
-             <!-- <i class="fa fa-search fa-2x"></i> -->
-          </form>
-          </form>
+          </form> -->
         </div>
     </div>  <!-- ends productback div --> 
 
 
     <div class="container">
       <h1 id="variety">Choose from a variety of skills</h1>
+      <a name="popular"></a>
       <h3 class="text-center">Most popular wynlancers</h3>
       <div class="profilesback">      
         <div class="jumbotron">
@@ -39,12 +44,12 @@
           <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
             <div class="hovereffect">
               <ul>  
-                <li><img class="img-responsive" src="http://www.teryrobertson.com/Graphics/images/1.jpg" alt="Profile Picture"></li> 
-              <div class="overlay">
+                <li><%= image_tag product.photo, class: "img-responsive" %></li>
+              <div class="overlay">              
                <li><%= product.name %></li>
                <li><%= product.description %></li>
                <li><%= product.formatted_price %></li>
-               <a class="info" href="#">Check out my profile</a>
+               <li><%= link_to 'Check out my profile', product, class: 'info' %></li>
              </div> <!-- ends overlay div -->
              </ul> 
            </div> <!-- ends hovereffect div -->
@@ -53,10 +58,13 @@
        </div> <!-- ends jumbotron div -->
      </div> <!-- ends profilesback div -->
    </div> <!-- ends container div -->
+
+   <div id="linedivider"></div>
    
    <div class="reviews">
      <table>
         <tr>
+        <a name="reviews"></a>
           <th colspan="2" class="text-center">Reviews</th>
         </tr>
         <tr>
