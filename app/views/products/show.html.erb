@@ -20,7 +20,7 @@
 
 <p>
   <strong>Price:</strong>
-  <%= @product.formatted_price %>
+  <%= number_to_currency @product.price_in_cents %>
 </p>
   </div>
 </div>
@@ -33,7 +33,7 @@
   <p>
   	<%= review.comment %>
   	<br>
-  	Added on: <%= time_ago_in_words review.created_at %>
+  	<%= time_ago_in_words review.created_at %> ago
   </p>
   <% end %>
 

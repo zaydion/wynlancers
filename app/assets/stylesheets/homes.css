@@ -150,6 +150,7 @@ header #input {
  	padding-top: 10px;
  	height: 380px;
  	width: 100%;
+ 	overflow-y: auto;
  	background-color: black;
  	color: white;
  }

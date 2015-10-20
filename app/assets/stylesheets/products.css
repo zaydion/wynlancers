@@ -14,7 +14,7 @@
 	border-radius: 1em;
 	background-color: rgba(0, 0, 0, 0.60);
 	padding: 2em;
-
+	
 }
 
 .productback p{
@@ -65,6 +65,8 @@
 	background-size: cover;
 	height: 70em;
 	margin-top: 5em;
+	
+ 	overflow-y: auto;
 }
 
 
