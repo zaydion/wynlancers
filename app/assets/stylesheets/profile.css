@@ -97,6 +97,19 @@ h3 {
 }
 
 
+.product_head .btn {
+	border: 0;
+	font-size: 1em;
+	padding: 1em;
+	margin-bottom: 1em;
+}
+
+
+.product_head .btn:hover {
+	background-color: darkgreen;
+	color: white;
+
+}
 
 
 

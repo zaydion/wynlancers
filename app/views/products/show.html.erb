@@ -25,7 +25,11 @@
 <%= image_tag @product.photo%>
 <p>
     <%= @product.name %>
+
 </p>
+<a href="mailto:edtoro@wynlancers.co">
+<input class="btn btn-default" type="submit" value="Contact">
+</a>
 </div>
 </div>
 <div class="container">
@@ -37,7 +41,7 @@
 
 <p>
   <strong>Price:</strong>
-  <%= number_to_currency @product.price_in_cents %>
+  <%= number_to_currency @product.price_in_cents %> / Hour
 </p>
   </div>
 </div>
