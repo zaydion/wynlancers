@@ -34,7 +34,7 @@
 
  .productback{
 	background-image: url("http://www.trigger-proof.com/wp-content/uploads/2013/03/Empowered-Supervisor.jpg");
-	height: 500px;
+	height: 550px;
 	background-repeat: no-repeat;
 	background-size: cover;
 	}
@@ -44,19 +44,25 @@
 	border-radius: 1em;
 	background-color: rgba(0, 0, 0, 0.60);
 	padding: 2em;
-<<<<<<< HEAD
 
 	}
-=======
+
 	
 }
->>>>>>> 292affaa12226a6248f4eb8ba0e0bd61f11a1c17
 
 	.productback p{
 	font-family: "Roboto condensed";
 	color:white;
 	text-align: center;
 	font-size: 1.6em;
+	}
+
+	.col-sm-8 p{
+		font-family: "Roboto condensed";
+		color:white;
+		text-align: center;
+		font-size: 1.6em;
+
 	}
 
 	.productback form{
@@ -70,6 +76,10 @@
 	border-radius: 1em;
 	padding-top: 0.5em;
 	padding-bottom: 0.5em;
+	}
+
+	.col-sm-8 h1{
+		text-align: center;
 	}
 
 	.jumbotron h1{
@@ -94,24 +104,22 @@
 	background-size: cover;
 	height: 70em;
 	margin-top: 5em;
-<<<<<<< HEAD
-	}
-=======
+
 	
  	overflow-y: auto;
 }
->>>>>>> 292affaa12226a6248f4eb8ba0e0bd61f11a1c17
+
 
 
 
 	#variety{
 	margin-top: 10%;
 	font-family: 'Montserrat', sans-serif;
+	text-align: center;
 	}
 
 	.navbar{
 	background:black;
-	margin-top: -15px;
 	margin-bottom: 100px;
 	}
 
@@ -120,15 +128,26 @@
 	font-size: 2.5em;
 	padding: 0.5em;
 	font-family: 'Sansita One', cursive;
+	color:white;
 	}
 
 	#title:hover{
+	color: black;
 	background: white;
 	}
 
 	.topnavbar ul{
 	margin-right: 5%;
 	padding:0.5em;
+	}
+
+	.topnavbar a{
+		color:white;
+	}
+
+	.topnavbar a:hover{
+		color:black;
+		background: white;
 	}
 
 	.overlay li{
@@ -175,11 +194,12 @@
 input[type="submit"] {
 	color:white;
 	background: green;
-	font-size: 0.8em;
+	font-size: 1em;
 	border-radius: 5px;
 	padding:6px;
 	padding-left: 9px;
 	padding-right: 9px;
+
 }
 
 form input[type=text]{
@@ -187,8 +207,9 @@ form input[type=text]{
 	padding-left: 30px;
 	padding-right: 30px;
 	color:black;
-	font-size: 0.8em;
+	font-size: 1em;
 	border-radius: 5px;
+	
 }
 
 .hovereffect {
@@ -202,8 +223,9 @@ cursor:default;
 }
 
 .hovereffect .overlay {
-width:100%;
+width:80%;
 height:100%;
+margin-left: 17%;
 position:absolute;
 overflow:hidden;
 top:0;
@@ -283,4 +305,21 @@ transform:translatey(0);
 -webkit-transition-delay:.2s;
 transition-delay:.2s;
 }
+
+.overlay a{
+	color:white;
+}
+
+
+#product_price_in_cents {
+
+	font-size: 1em;
+	color: #000;
+	border-radius: 0.2em;
+}
+
+
+
+
+
 

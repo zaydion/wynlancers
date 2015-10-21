@@ -3,12 +3,16 @@ h3 {
 }
 
 .product_profile {
-	background: rgba(0, 0, 0, 0.60);
+	background: rgba(0, 0, 0, 0.80);
 }
 
 .product_head {
 	text-align: center;
 	border-bottom: 2px solid white;
+}
+
+.product_head p {
+  font-size: 4em;
 }
 
 .product_head img {
@@ -34,21 +38,36 @@ h3 {
 	width: 100%;
 }
 
+.description p {
+	font-size: 2em;
+}
+
 
 .container .profile_feet {
-	background-color: rgba(0, 0, 0, 0.60);
+	background-color: rgba(0, 0, 0, 0.80);
 	width: 100%;
 	overflow-y: auto;
-	height: 20em;
+	height: 30em;
 	text-align: center;
 	padding-top: 2em;
 }
+
+ .container .profile_feet h3 {
+  font-size: 4em;
+  padding-bottom: 1em;
+ }
+
+  .container .profile_feet p {
+  	font-size: 2em;
+  	padding-bottom: 0.25em;
+  }
 
 
 .container .profile_feet textarea {
 	border-radius: 1em;
 	border: 0;
 	color: black;
+	padding: 5em;
 }
 
 
@@ -59,6 +78,33 @@ h3 {
 	border-radius: 1em;
 	padding: 5px;
 }
+
+ .container .profile_feet h4 {
+ 	color: green;
+ 	font-style: normal;
+ }
+
+ .field label {
+ 	font-size: 1em;
+
+ }
+
+.profile_feet .actions input {
+	font-size: 1.25em;
+	padding: 1em;
+	margin-top: 2%;
+	margin-bottom: 2%;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 

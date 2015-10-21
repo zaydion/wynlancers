@@ -1,5 +1,22 @@
-<div class="container-fluid">
-<div class="product_profile">
+
+    <div class="navbar">
+     <div class="topnavbar">
+       <a id="title" href="/" class="navbar-brand"> 
+          Wynlancers
+       </a>
+  
+       <ul class="nav navbar-nav navbar-right">
+         <li><a href="/">Home</a></li>
+        <li><a href="/products#popular">Popular</a></li>
+         <li><a href="/products#reviews">Reviews</a></li>
+       </ul>
+  
+      </div> <!-- ends topnavbar div --> 
+    </div> <!-- ends navbar div --> 
+
+
+<div class="container-fluid" style="margin-top: -100px">
+<div class="product_profile" style="margin-top: -100px">
 <!-- <p id="notice"><%= notice %></p> -->
 
 
@@ -29,20 +46,21 @@
 <div class="profile_feet">
 <h3>Reviews</h3>
 
+
 <% @product.reviews.each do | review | %>
   <p>
   	<%= review.comment %>
   	<br>
+    <div class="comment_time" style="font-size: 1em;">
   	<%= time_ago_in_words review.created_at %> ago
+    </div>
   </p>
   <% end %>
 
-  <h3>New Review</h3>
-  <%= render 'reviews/form' %>
-</div>
-</div>
 
-<%= link_to 'Edit', edit_product_path(@product) %> |
-<%= link_to 'Back', products_path %>
+  <h4>New Review</h4>
+  <%= render 'reviews/form' %>
+
+
 </div>
 </div>
