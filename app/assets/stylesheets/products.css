@@ -2,7 +2,7 @@
   Place all the styles related to the matching controller here.
   They will automatically be included in application.css.
 */
-
+/*
 
 @media (min-width: 768px) and (max-width: 1023px) {
   .reviews p{
@@ -12,7 +12,7 @@
 
    .productback h1{
 	color:white	;
-	font-family:"Noto sans"; 
+	font-family:"Noto sans";
 	font-weight: bold;
 	font-size: 3em;
 	}
@@ -26,7 +26,7 @@
 
    .productback h1{
 	color:white	;
-	font-family:"Noto sans"; 
+	font-family:"Noto sans";
 	font-weight: bold;
 	font-size: 4em;
 	}
@@ -47,7 +47,7 @@
 
 	}
 
-	
+
 }
 
 	.productback p{
@@ -105,7 +105,7 @@
 	height: 70em;
 	margin-top: 5em;
 
-	
+
  	overflow-y: auto;
 }
 
@@ -171,7 +171,7 @@
 	font-family: 'Montserrat', sans-serif;
 	}
 
- 
+
    .reviews img{
 	border-radius: 20em;
 	margin-left: 30%;
@@ -209,7 +209,7 @@ form input[type=text]{
 	color:black;
 	font-size: 1em;
 	border-radius: 5px;
-	
+
 }
 
 .hovereffect {
@@ -322,4 +322,4 @@ transition-delay:.2s;
 
 
 
-
+*/
