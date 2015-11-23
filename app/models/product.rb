@@ -16,7 +16,7 @@ class Product < ActiveRecord::Base
   		else
     		all
   		end
-  		resultsB.length == 0 ? resultsA : resultsB 
+  		resultsB.length == 0 ? resultsA : resultsB
 	end
 
 
